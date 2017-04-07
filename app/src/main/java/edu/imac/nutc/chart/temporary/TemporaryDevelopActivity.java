@@ -2,6 +2,8 @@ package edu.imac.nutc.chart.temporary;
 
 import android.os.Bundle;
 
+import edu.imac.nutc.chart.BarActivity;
+import edu.imac.nutc.chart.BarChart;
 import edu.imac.nutc.chart.MainActivity;
 
 
@@ -15,5 +17,6 @@ public class TemporaryDevelopActivity extends SeparateDeveloperActivity {
         super.onCreate(savedInstanceState);
         // Activity
         addActivityButton(MainActivity.class, null);
+        addActivityButton(BarActivity.class, null);
     }
 }
