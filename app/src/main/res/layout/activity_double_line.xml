@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/double_line_upper_current_num_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/double_line_lower_current_num_textview"
+        android:layout_below="@id/double_line_upper_current_num_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/double_line_picture_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/double_line_lower_current_num_textview"
+        android:src="@mipmap/double_line" />
+
+    <TextView
+        android:id="@+id/tosn_turn_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/double_line_upper_current_num_textview"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/double_line_upper_current_num_textview"
+        android:text="TOSS &amp; TURN"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/avg_activity_text"
+        android:layout_below="@id/tosn_turn_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/double_line_lower_current_num_textview"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/double_line_upper_current_num_textview"
+        android:text="Avg activity"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <edu.imac.nutc.chart.DoubleLineChart
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/double_line_lower_current_num_textview"
+        app:first_lineColor="@color/lime"
+        app:second_lineColor="@android:color/holo_red_light"
+        app:textColor="@android:color/white" />
+</RelativeLayout>

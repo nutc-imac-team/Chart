@@ -27,17 +27,17 @@ public class BarChart extends View {
         textPaint = new Paint();
         graphicPaint=new Paint();
         TypedArray a = context.obtainStyledAttributes(attr,
-                R.styleable.Chart);
+                R.styleable.BarChart);
         for (int i = 0; i < data.length; i++) {
             if (maxdata < data[i]) {
                 maxdata = (float) data[i];
             }
         }
-        int textColor = a.getColor(R.styleable.Chart_textColor,
+        int textColor = a.getColor(R.styleable.BarChart_textColor,
                 0XFFFFFFFF);
-        int graphicColor = a.getColor(R.styleable.Chart_graphicColor,
+        int graphicColor = a.getColor(R.styleable.BarChart_graphicColor,
                 0XFFFFFFFF);
-        float textSize = a.getDimension(R.styleable.Chart_textSize, 64);
+        float textSize = a.getDimension(R.styleable.BarChart_textSize, 64);
         textPaint.setTextSize(textSize);
         textPaint.setColor(textColor);
         graphicPaint.setColor(graphicColor);
