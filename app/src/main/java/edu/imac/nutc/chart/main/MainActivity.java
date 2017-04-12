@@ -1,7 +1,9 @@
-package edu.imac.nutc.chart;
+package edu.imac.nutc.chart.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import edu.imac.nutc.chart.R;
 
 public class MainActivity extends AppCompatActivity {
 

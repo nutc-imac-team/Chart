@@ -5,4 +5,27 @@
         <attr name="textSize" format="dimension"/>
         <attr name="graphicColor" format="color"/>
     </declare-styleable>
+    <declare-styleable name="Hrv">
+        <attr name="hrvBaseLineTextColor" format="color"/>
+        <attr name="hrvBaseLineColor" format="color"/>
+        <attr name="hrvBaseLineWidth" format="dimension"/>
+        <attr name="hrvBaseLineTextSize" format="dimension"/>
+        <attr name="hrvGraphicPointColor" format="color"/>
+        <!--<attr name="hrvGraphicPointWidth" format="dimension"/>-->
+        <attr name="hrvGraphicLineColor" format="color"/>
+        <attr name="hrvGraphicLineWidth" format="dimension"/>
+        <attr name="hrvGraphicAreaColor" format="color"/>
+        <attr name="hrvGraphicTextColor" format="color"/>
+        <attr name="hrvGraphicTextWidth" format="dimension"/>
+        <attr name="hrvIndexWidth" format="dimension"/>
+        <attr name="hrvIndexColor" format="color"/>
+        <attr name="hrvIndexTextSize" format="dimension"/>
+        <attr name="hrvIndexTextColor" format="color"/>
+        <attr name="hrvIndexCircleColor" format="color"/>
+        <attr name="hrvMaxValueColor" format="color"/>
+        <attr name="hrvMaxValueSize" format="color"/>
+        <attr name="hrvMinValueColor" format="color"/>
+        <attr name="hrvMinValueSize" format="color"/>
+
+    </declare-styleable>
 </resources>

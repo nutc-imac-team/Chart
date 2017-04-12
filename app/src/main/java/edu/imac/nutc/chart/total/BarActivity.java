@@ -1,8 +1,10 @@
-package edu.imac.nutc.chart;
+package edu.imac.nutc.chart.total;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import edu.imac.nutc.chart.R;
 
 
 public class BarActivity extends AppCompatActivity {

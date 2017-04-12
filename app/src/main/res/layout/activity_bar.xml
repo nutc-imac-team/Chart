@@ -35,7 +35,7 @@
         android:textColor="@android:color/white"
         android:textSize="20sp" />
 
-    <edu.imac.nutc.chart.BarChart
+    <edu.imac.nutc.chart.total.BarChart
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

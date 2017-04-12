@@ -1,4 +1,4 @@
-package edu.imac.nutc.chart;
+package edu.imac.nutc.chart.total;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,6 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import edu.imac.nutc.chart.R;
 
 /**
  * Created by cheng on 2017/3/30.
