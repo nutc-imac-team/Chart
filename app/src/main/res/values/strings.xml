@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Chart</string>
+    <string name="title_activity_hrv">HrvActivity</string>
 </resources>

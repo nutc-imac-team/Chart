@@ -55,7 +55,6 @@
         android:textSize="20sp" />
 
     <edu.imac.nutc.chart.DoubleLineChart
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/double_line_lower_current_num_textview"

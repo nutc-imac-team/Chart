@@ -16,9 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".BarActivity"/>
         <activity android:name=".DoubleLineActivity"/>
+        <activity android:name=".main.MainActivity"/>
+        <activity android:name=".total.BarActivity"/>
+        <activity
+            android:name=".hrv.HrvActivity"
+            android:label="@string/title_activity_hrv"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
