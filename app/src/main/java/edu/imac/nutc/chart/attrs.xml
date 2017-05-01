@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SleepClassesView">
+        <attr name="textColor" format="integer"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+</resources>

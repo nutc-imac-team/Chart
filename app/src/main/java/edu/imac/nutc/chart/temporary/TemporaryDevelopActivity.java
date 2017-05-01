@@ -3,6 +3,7 @@ package edu.imac.nutc.chart.temporary;
 import android.os.Bundle;
 
 import edu.imac.nutc.chart.MainActivity;
+import edu.imac.nutc.chart.SleepClassesActivity;
 
 
 /**
@@ -15,5 +16,6 @@ public class TemporaryDevelopActivity extends SeparateDeveloperActivity {
         super.onCreate(savedInstanceState);
         // Activity
         addActivityButton(MainActivity.class, null);
+        addActivityButton(SleepClassesActivity.class,null);
     }
 }
