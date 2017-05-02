@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/breathing_rate_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:text="@string/breathing_rate_title" />
+
+    <RelativeLayout
+        android:id="@+id/breathing_rate_center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breathing_rate_tittle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lung" />
+
+        <TextView
+            android:id="@+id/breathing_rate_avg_high_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="25" />
+
+        <TextView
+            android:id="@+id/breathing_rate_avg_bpm_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/breathing_rate_avg_high_num"
+            android:layout_centerHorizontal="true"
+            android:text="13" />
+
+        <TextView
+            android:id="@+id/breathing_rate_avg_low_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/breathing_rate_avg_bpm_num"
+            android:layout_centerHorizontal="true"
+            android:text="4" />
+        <!--avg-->
+            <edu.imac.nutc.chart.BreathingStripView
+                android:id="@+id/breathing_rate_avg_high_test"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@id/breathing_rate_avg_low_num"
+                />
+
+        <TextView
+            android:id="@+id/breathing_rate_avg_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/breathing_rate_avg_high_test"
+            android:text="@string/breathing_rate_avg_high" />
+
+        <TextView
+            android:id="@+id/breathing_rate_avg_bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/breathing_rate_avg_high"
+            android:layout_toLeftOf="@id/breathing_rate_avg_high_test"
+
+            android:text="@string/breathing_rate_avg_bpm"/>
+
+        <TextView
+            android:id="@+id/breathing_rate_avg_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/breathing_rate_avg_bpm"
+            android:layout_toLeftOf="@id/breathing_rate_avg_high_test"
+            android:text="@string/breathing_rate_avg_low" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/breathing_rate_center_layout"
+       >
+        <edu.imac.nutc.chart.BreathingWeekendView
+            android:id="@+id/breathing_weekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+</RelativeLayout>

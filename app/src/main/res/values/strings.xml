@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Chart</string>
+
+    <string name="breathing_rate_title">Breathing Rate</string>
+    <string name="breathing_rate_avg_low">Avg high bpm</string>
+    <string name="breathing_rate_avg_bpm">Avg  bpm</string>
+    <string name="breathing_rate_avg_high">Avg low bpm</string>
+    <string name="ans_balance_title">Ans_balance</string>
 </resources>
