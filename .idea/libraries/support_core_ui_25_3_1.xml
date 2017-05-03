@@ -1,28 +1,12 @@
 <component name="libraryTable">
   <library name="support-core-ui-25.3.1">
-    <ANNOTATIONS>
-<<<<<<< HEAD
-      <root url="jar://$USER_HOME$/.android/build-cache/7b07d37c974a02c61292545735b21507369d2a83/output/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/7b07d37c974a02c61292545735b21507369d2a83/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/7b07d37c974a02c61292545735b21507369d2a83/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/00cf6780ae63476f4259a8852ccfa4105b0b9a0a/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/00cf6780ae63476f4259a8852ccfa4105b0b9a0a/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://D:/sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.1/support-core-ui-25.3.1-sources.jar!/" />
-=======
-      <root url="jar://$USER_HOME$/.android/build-cache/3e6f47b9c3f52055b730014bad1d11d19c32f3fa/output/annotations.zip!/" />
-    </ANNOTATIONS>
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/3e6f47b9c3f52055b730014bad1d11d19c32f3fa/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/3e6f47b9c3f52055b730014bad1d11d19c32f3fa/output/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://D:/Users/user/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.1/support-core-ui-25.3.1-sources.jar!/" />
-      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.1/support-core-ui-25.3.1-sources.jar!/" />
->>>>>>> 356e2bef36413e341da499463ff4d1ddbee58beb
+      <root url="jar://$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.1/support-core-ui-25.3.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

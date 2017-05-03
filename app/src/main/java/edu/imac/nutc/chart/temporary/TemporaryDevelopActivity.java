@@ -8,6 +8,7 @@ import edu.imac.nutc.chart.hrv.HrvActivity;
 import edu.imac.nutc.chart.main.MainActivity;
 import edu.imac.nutc.chart.total.BarActivity;
 import edu.imac.nutc.chart.BreathingRateActivity;
+import edu.imac.nutc.chart.SleepClassesActivity;
 
 
 /**
@@ -25,5 +26,6 @@ public class TemporaryDevelopActivity extends SeparateDeveloperActivity {
         addActivityButton(HrvActivity.class, null);
         addActivityButton(HrActivity.class,null);
         addActivityButton(BreathingRateActivity.class,null);
+        addActivityButton(SleepClassesActivity.class,null);
     }
 }

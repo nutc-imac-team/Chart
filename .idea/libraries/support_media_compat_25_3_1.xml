@@ -1,28 +1,12 @@
 <component name="libraryTable">
   <library name="support-media-compat-25.3.1">
-    <ANNOTATIONS>
-<<<<<<< HEAD
-      <root url="jar://$USER_HOME$/.android/build-cache/4eee1e09703926ff27a63f6df14c6c8d008b21c5/output/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/4eee1e09703926ff27a63f6df14c6c8d008b21c5/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/4eee1e09703926ff27a63f6df14c6c8d008b21c5/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/7a5d22a378668a6354ba2dd406d02e2a57df6f3c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7a5d22a378668a6354ba2dd406d02e2a57df6f3c/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://D:/sdk/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1-sources.jar!/" />
-=======
-      <root url="jar://$USER_HOME$/.android/build-cache/35bb1aa536a72b08528d2e95a5f1dc7f0d6aefcc/output/annotations.zip!/" />
-    </ANNOTATIONS>
-    <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/35bb1aa536a72b08528d2e95a5f1dc7f0d6aefcc/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/35bb1aa536a72b08528d2e95a5f1dc7f0d6aefcc/output/jars/classes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://D:/Users/user/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1-sources.jar!/" />
-      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1-sources.jar!/" />
->>>>>>> 356e2bef36413e341da499463ff4d1ddbee58beb
+      <root url="jar://$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

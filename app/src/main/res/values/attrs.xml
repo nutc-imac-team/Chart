@@ -56,4 +56,8 @@
         <attr name="breathingRateColor" format="integer"/>
         <attr name="breathingRateTextSize" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="SleepClassesView">
+        <attr name="sleepClassesTextColor" format="integer"/>
+        <attr name="sleepClassesTextSize" format="dimension"/>
+    </declare-styleable>
 </resources>
