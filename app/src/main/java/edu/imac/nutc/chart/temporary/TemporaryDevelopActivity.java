@@ -2,7 +2,8 @@ package edu.imac.nutc.chart.temporary;
 
 import android.os.Bundle;
 
-import edu.imac.nutc.chart.DoubleLineActivity;
+import edu.imac.nutc.chart.doubleline.DoubleLineActivity;
+import edu.imac.nutc.chart.hr.HrActivity;
 import edu.imac.nutc.chart.hrv.HrvActivity;
 import edu.imac.nutc.chart.main.MainActivity;
 import edu.imac.nutc.chart.total.BarActivity;
@@ -21,5 +22,6 @@ public class TemporaryDevelopActivity extends SeparateDeveloperActivity {
         addActivityButton(BarActivity.class, null);
         addActivityButton(DoubleLineActivity.class, null);
         addActivityButton(HrvActivity.class, null);
+        addActivityButton(HrActivity.class,null);
     }
 }

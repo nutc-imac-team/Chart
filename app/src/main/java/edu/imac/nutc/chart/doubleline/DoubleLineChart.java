@@ -1,4 +1,4 @@
-package edu.imac.nutc.chart;
+package edu.imac.nutc.chart.doubleline;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,6 +7,8 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.View;
+
+import edu.imac.nutc.chart.R;
 
 /**
  * Created by cheng on 2017/4/11.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="edu.imac.nutc.chart">
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".DoubleLineActivity"/>
+        <activity android:name=".doubleline.DoubleLineActivity"/>
         <activity android:name=".main.MainActivity"/>
         <activity android:name=".total.BarActivity"/>
+        <activity android:name=".hr.HrActivity"/>
         <activity
             android:name=".hrv.HrvActivity"
             android:label="@string/title_activity_hrv"
