@@ -9,16 +9,26 @@
     tools:context="edu.imac.nutc.chart.hrv.HrvActivity">
 
     <TextView
-        android:id="@+id/hrv_upper_current_num_textview"
+        android:id="@+id/hr_upper_current_num_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
+
     <TextView
-        android:id="@+id/hrv_lower_current_num_textview"
-        android:layout_below="@id/hrv_upper_current_num_textview"
+        android:id="@+id/hr_median_current_num_textview"
+        android:layout_below="@id/hr_upper_current_num_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/hr_lower_current_num_textview"
+        android:layout_below="@id/hr_median_current_num_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -26,38 +36,40 @@
         android:textSize="30sp" />
 
     <ImageView
-        android:id="@+id/hrv_picture_imageview"
+        android:id="@+id/hr_picture_imageview"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="70dp"
         android:layout_marginRight="30dp"
-        android:layout_toLeftOf="@id/hrv_lower_current_num_textview"
-        android:src="@mipmap/hrv_heart" />
+        android:layout_alignBottom="@id/hr_median_current_num_textview"
+        android:layout_toLeftOf="@id/hr_median_current_num_textview"
+        android:src="@mipmap/hr_heart" />
 
     <TextView
-        android:id="@+id/hrv_morning_textview"
+        android:id="@+id/hr_avg_bpm_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/hrv_upper_current_num_textview"
+        android:layout_alignBottom="@id/hr_median_current_num_textview"
         android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@id/hrv_upper_current_num_textview"
-        android:text="Morning"
+        android:layout_toRightOf="@id/hr_median_current_num_textview"
+        android:text="Avg bpm"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
     <TextView
-        android:id="@+id/hrv_evening_text"
-        android:layout_below="@id/hrv_morning_textview"
+        android:id="@+id/hr_resting_bpm_text"
+        android:layout_below="@id/hr_avg_bpm_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/hrv_lower_current_num_textview"
+        android:layout_alignBottom="@id/hr_lower_current_num_textview"
         android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@id/hrv_upper_current_num_textview"
-        android:text="Evening"
+        android:layout_toRightOf="@id/hr_lower_current_num_textview"
+        android:text="Resting bpm"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
-    <edu.imac.nutc.chart.hrv.HrvChart
-        android:id="@+id/hrv_view"
-        android:layout_below="@id/hrv_lower_current_num_textview"
+
+    <edu.imac.nutc.chart.hr.HrChart
+        android:id="@+id/hr_view"
+        android:layout_below="@id/hr_lower_current_num_textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </RelativeLayout>

@@ -1,9 +1,11 @@
-package edu.imac.nutc.chart;
+package edu.imac.nutc.chart.doubleline;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import edu.imac.nutc.chart.R;
 
 /**
  * Created by cheng on 2017/4/11.
