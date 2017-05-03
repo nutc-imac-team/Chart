@@ -25,6 +25,11 @@
             android:label="@string/title_activity_hrv"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".BreathingRateActivity"
+            android:screenOrientation="landscape"
+            >
+
+    </activity>
     </application>
 
 </manifest>

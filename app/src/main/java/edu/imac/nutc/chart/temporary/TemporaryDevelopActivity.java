@@ -7,10 +7,11 @@ import edu.imac.nutc.chart.hr.HrActivity;
 import edu.imac.nutc.chart.hrv.HrvActivity;
 import edu.imac.nutc.chart.main.MainActivity;
 import edu.imac.nutc.chart.total.BarActivity;
+import edu.imac.nutc.chart.BreathingRateActivity;
 
 
 /**
- * Created by Ameng on 2015/12/14.
+ * Creatgied by Ameng on 2015/12/14.
  */
 public class TemporaryDevelopActivity extends SeparateDeveloperActivity {
 
@@ -23,5 +24,6 @@ public class TemporaryDevelopActivity extends SeparateDeveloperActivity {
         addActivityButton(DoubleLineActivity.class, null);
         addActivityButton(HrvActivity.class, null);
         addActivityButton(HrActivity.class,null);
+        addActivityButton(BreathingRateActivity.class,null);
     }
 }

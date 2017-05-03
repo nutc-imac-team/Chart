@@ -51,4 +51,9 @@
         <attr name="hrvMinValueColor" format="color"/>
         <attr name="hrvMinValueSize" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="BreathingRateView">
+        <attr name="breathingRateColor" format="integer"/>
+        <attr name="breathingRateTextSize" format="dimension"/>
+    </declare-styleable>
 </resources>
