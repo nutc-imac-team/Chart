@@ -26,10 +26,47 @@ public class API {
     private Context context;
     private GetHRVFinish getHRVFinish;
     private GetHRFinish getHRFinish;
+    private GetBRFinish getBRFinish;
     public API(Context context){
         this.context=context;
         queue = SingleRequestQueue.getQueue(context);
     }
+    public void setOnBRFinish(GetBRFinish getBRFinish) {
+        this.getBRFinish = getBRFinish;
+    }
+    public interface GetBRFinish{
+        void finish(String response) throws JSONException;
+    }
+    public void getBR(final String network) {
+        String url = "http://smartbed.honixtech.com:8081/api/getBR";
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        if (getBRFinish != null) {
+                            try {
+                                getBRFinish.finish(response);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("请求错误:", error.toString());
+            }
+        }) {
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("network", network);
+                return params;
+            }
+        };
+        queue.add(stringRequest);
+    }
+
     public void setOnHRVFinish(GetHRVFinish getHRVFinish) {
         this.getHRVFinish = getHRVFinish;
     }

@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="25" />
+            android:text="0" />
 
         <TextView
             android:id="@+id/breathing_rate_avg_bpm_num"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/breathing_rate_avg_high_num"
             android:layout_centerHorizontal="true"
-            android:text="13" />
+            android:text="0"/>
 
         <TextView
             android:id="@+id/breathing_rate_avg_low_num"
@@ -48,9 +48,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/breathing_rate_avg_bpm_num"
             android:layout_centerHorizontal="true"
-            android:text="4" />
+            android:text="0"/>
         <!--avg-->
-            <edu.imac.nutc.chart.BreathingStripView
+            <edu.imac.nutc.chart.br.BreathingStripView
                 android:id="@+id/breathing_rate_avg_high_test"
                 android:layout_width="10dp"
                 android:layout_height="match_parent"
@@ -87,17 +87,9 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@+id/breathing_rate_center_layout"
-       >
-        <edu.imac.nutc.chart.BreathingWeekendView
+        <edu.imac.nutc.chart.br.BreathingWeekendView
             android:id="@+id/breathing_weekend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        </RelativeLayout>
 
 </RelativeLayout>

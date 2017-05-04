@@ -1,4 +1,4 @@
-package edu.imac.nutc.chart;
+package edu.imac.nutc.chart.sleep;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,6 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import edu.imac.nutc.chart.R;
 
 /**
  * Created by user on 2017/3/30.
@@ -24,8 +26,8 @@ public class SleepStripView extends View{
         super(context, attrs);
         chartPaint = new Paint();
         TypedArray typedArray=context.obtainStyledAttributes(attrs, R.styleable.SleepClassesView);
-        int textColor=typedArray.getColor(R.styleable.SleepClassesView_sleepClassesTextColor,0xff9B4FE9);
-        float textSize=typedArray.getDimension(R.styleable.SleepClassesView_sleepClassesTextSize,30);
+        int textColor=typedArray.getColor(R.styleable.SleepClassesView_textColor,0xff9B4FE9);
+        float textSize=typedArray.getDimension(R.styleable.SleepClassesView_textSize,30);
         chartPaint.setColor(textColor);
         chartPaint.setTextSize(textSize);
         typedArray.recycle();

@@ -51,7 +51,6 @@ public class HrvActivity extends AppCompatActivity{
             }
             hrvChart.setLineData(morning);
             hrvChart.setGraphicData(evening);
-            hrvChart.setDownload(true);
             hrvChart.invalidate();
             upperTextView.setText(morning[6]+"");
             lowerTextView.setText(evening[6]+"");

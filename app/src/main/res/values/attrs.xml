@@ -53,11 +53,14 @@
     </declare-styleable>
 
     <declare-styleable name="BreathingRateView">
-        <attr name="breathingRateColor" format="integer"/>
-        <attr name="breathingRateTextSize" format="dimension"/>
+        <attr name="textColor"/>
+        <attr name="textSize" />
+        <attr name="lineColor"/>
+        <attr name="graphicColor"/>
     </declare-styleable>
     <declare-styleable name="SleepClassesView">
-        <attr name="sleepClassesTextColor" format="integer"/>
-        <attr name="sleepClassesTextSize" format="dimension"/>
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="graphicColor"/>
     </declare-styleable>
 </resources>

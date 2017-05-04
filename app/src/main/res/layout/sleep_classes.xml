@@ -40,7 +40,7 @@
             android:layout_toRightOf="@id/remtext"
             android:layout_weight="5">
 
-            <edu.imac.nutc.chart.SleepStripView
+            <edu.imac.nutc.chart.sleep.SleepStripView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true" />
@@ -80,7 +80,7 @@
             android:layout_toRightOf="@id/lighttext"
             android:layout_weight="5">
 
-            <edu.imac.nutc.chart.SleepStripView
+            <edu.imac.nutc.chart.sleep.SleepStripView
                 android:id="@+id/lightstripdata"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
             android:layout_toRightOf="@id/deeptext"
             android:layout_weight="5">
 
-        <edu.imac.nutc.chart.SleepStripView
+        <edu.imac.nutc.chart.sleep.SleepStripView
             android:id="@+id/deepstripdata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
         android:layout_alignParentBottom="true"
         android:layout_below="@id/deep">
 
-        <edu.imac.nutc.chart.SleepWeekendView
+        <edu.imac.nutc.chart.sleep.SleepWeekendView
             android:id="@+id/chartData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
