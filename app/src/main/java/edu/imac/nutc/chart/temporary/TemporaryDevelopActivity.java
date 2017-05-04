@@ -7,8 +7,8 @@ import edu.imac.nutc.chart.hr.HrActivity;
 import edu.imac.nutc.chart.hrv.HrvActivity;
 import edu.imac.nutc.chart.main.MainActivity;
 import edu.imac.nutc.chart.total.BarActivity;
-import edu.imac.nutc.chart.BreathingRateActivity;
-import edu.imac.nutc.chart.SleepClassesActivity;
+import edu.imac.nutc.chart.br.BreathingRateActivity;
+import edu.imac.nutc.chart.sleep.SleepClassesActivity;
 
 
 /**

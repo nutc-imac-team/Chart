@@ -25,13 +25,8 @@
             android:label="@string/title_activity_hrv"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".BreathingRateActivity"
-            android:screenOrientation="landscape"
-            >
-
-    </activity>
-        <activity android:name=".SleepClassesActivity"
-            android:screenOrientation="landscape"/>
+        <activity android:name=".br.BreathingRateActivity"/>
+        <activity android:name=".sleep.SleepClassesActivity" />
     </application>
 
 </manifest>

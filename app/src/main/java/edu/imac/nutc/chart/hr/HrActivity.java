@@ -61,7 +61,6 @@ public class HrActivity extends AppCompatActivity {
             hrChart.setLineData(avg);
             hrChart.setMaxGraphicData(max);
             hrChart.setMinGraphicData(min);
-            hrChart.setDownload(true);
             hrChart.invalidate();
             upperTextView.setText(max[6]+"");
             medianTextView.setText(avg[6]+"");
