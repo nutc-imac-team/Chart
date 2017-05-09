@@ -7,6 +7,8 @@ import android.widget.TextView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import edu.imac.nutc.chart.R;
 
 import edu.imac.nutc.chart.model.API;
@@ -17,25 +19,28 @@ import edu.imac.nutc.chart.model.SetWeek;
  */
 
 public class HrActivity extends AppCompatActivity {
+    @Bind(R.id.hr_upper_current_num_textview)
     TextView upperTextView;
+    @Bind(R.id.hr_median_current_num_textview)
     TextView medianTextView;
+    @Bind(R.id.hr_lower_current_num_textview)
     TextView lowerTextView;
+    @Bind(R.id.hr_view)
     HrChart hrChart;
     API api;
+    private String network;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hr);
+        ButterKnife.bind(this);
         init();
     }
     private void init(){
-        upperTextView = (TextView) findViewById(R.id.hr_upper_current_num_textview);
-        medianTextView = (TextView) findViewById(R.id.hr_median_current_num_textview);
-        lowerTextView= (TextView) findViewById(R.id.hr_lower_current_num_textview);
+        network=getIntent().getStringExtra("network");
         api=new API(HrActivity.this);
-        api.getHR("Cherry");
+        api.getHR(network);
         api.setOnHRFinish(getHRFinish);
-        hrChart= (HrChart) findViewById(R.id.hr_view);
     }
 
     API.GetHRFinish getHRFinish=new API.GetHRFinish() {

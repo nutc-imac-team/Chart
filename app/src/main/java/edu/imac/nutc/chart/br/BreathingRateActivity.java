@@ -8,6 +8,8 @@ import android.widget.TextView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import edu.imac.nutc.chart.R;
 import edu.imac.nutc.chart.model.API;
 import edu.imac.nutc.chart.model.SetWeek;
@@ -17,28 +19,29 @@ import edu.imac.nutc.chart.model.SetWeek;
  */
 
 public class BreathingRateActivity extends AppCompatActivity {
-
+    @Bind(R.id.breathing_weekend)
     BreathingWeekendView breathingWeekendView;
+    @Bind(R.id.breathing_rate_avg_high_num)
     TextView avgHighBmp;
+    @Bind(R.id.breathing_rate_avg_low_num)
     TextView avgLowBmp;
+    @Bind(R.id.breathing_rate_avg_bpm_num)
     TextView avgBmp;
     API api;
-
+    private String network;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.breathing_rate);
-        findView();
-        api = new API(BreathingRateActivity.this);
-        api.getBR("Cherry");
-        api.setOnBRFinish(getBRFinish);
+        ButterKnife.bind(this);
+        init();
     }
 
-    private void findView() {
-        avgHighBmp = (TextView) findViewById(R.id.breathing_rate_avg_high_num);
-        avgBmp = (TextView) findViewById(R.id.breathing_rate_avg_bpm_num);
-        avgLowBmp = (TextView) findViewById(R.id.breathing_rate_avg_low_num);
-        breathingWeekendView = (BreathingWeekendView) findViewById(R.id.breathing_weekend);
+    private void init() {
+        network=getIntent().getStringExtra("network");
+        api = new API(BreathingRateActivity.this);
+        api.getBR(network);
+        api.setOnBRFinish(getBRFinish);
     }
 
     API.GetBRFinish getBRFinish = new API.GetBRFinish() {

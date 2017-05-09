@@ -43,14 +43,14 @@ public class BreathingWeekendView extends View {
             }
         }
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.BreathingRateView);
-        int textPaintTextColor = typedArray.getColor(R.styleable.BreathingRateView_textColor, Color.BLACK);
+        int textPaintTextColor = typedArray.getColor(R.styleable.BreathingRateView_textColor, 0XFFFFFFFF);
         float textPaintTextSize = typedArray.getDimension(R.styleable.BreathingRateView_textSize, 64);
         textPaint.setColor(textPaintTextColor);
         textPaint.setTextSize(textPaintTextSize);
 
-        int circlePaintTextColor = typedArray.getColor(R.styleable.BreathingRateView_textColor, 0xff0072C2);
+        int circlePaintTextColor = typedArray.getColor(R.styleable.BreathingRateView_textColor, 0xff039BE5);
         linePaint.setColor(circlePaintTextColor);
-        int chartPaintColor = typedArray.getColor(R.styleable.BreathingRateView_textColor, 0xff55ffff);
+        int chartPaintColor = typedArray.getColor(R.styleable.BreathingRateView_textColor, 0xff0072C2);
         graphicPaint.setColor(chartPaintColor);
         typedArray.recycle();
 

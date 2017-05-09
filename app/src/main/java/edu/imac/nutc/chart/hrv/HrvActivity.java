@@ -9,29 +9,34 @@ import org.json.JSONObject;
 
 import java.math.BigDecimal;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import edu.imac.nutc.chart.model.API;
 import edu.imac.nutc.chart.R;
 import edu.imac.nutc.chart.model.SetWeek;
 
 public class HrvActivity extends AppCompatActivity{
     protected String TAG = HrvActivity.class.getName();
+    @Bind(R.id.hrv_upper_current_num_textview)
     TextView upperTextView;
+    @Bind(R.id.hrv_lower_current_num_textview)
     TextView lowerTextView;
-    private API api;
+    @Bind(R.id.hrv_view)
     HrvChart hrvChart;
+    private API api;
+    private String network;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hrv);
+        ButterKnife.bind(this);
         init();
     }
     private void init(){
-        upperTextView = (TextView) findViewById(R.id.hrv_upper_current_num_textview);
-        lowerTextView= (TextView) findViewById(R.id.hrv_lower_current_num_textview);
+        network=getIntent().getStringExtra("network");
         api=new API(HrvActivity.this);
-        api.getHRV("Cherry");
+        api.getHRV(network);
         api.setOnHRVFinish(getHRVFinish);
-        hrvChart= (HrvChart) findViewById(R.id.hrv_view);
     }
     API.GetHRVFinish getHRVFinish=new API.GetHRVFinish() {
         @Override

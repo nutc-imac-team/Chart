@@ -2,13 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/black">
 
     <TextView
         android:id="@+id/breathing_rate_tittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         android:text="@string/breathing_rate_title" />
 
@@ -32,6 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
             android:text="0" />
 
         <TextView
@@ -40,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/breathing_rate_avg_high_num"
             android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
             android:text="0"/>
 
         <TextView
@@ -48,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/breathing_rate_avg_bpm_num"
             android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
             android:text="0"/>
         <!--avg-->
             <edu.imac.nutc.chart.br.BreathingStripView
@@ -64,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/breathing_rate_avg_high_test"
+            android:textColor="@android:color/white"
             android:text="@string/breathing_rate_avg_high" />
 
         <TextView
@@ -72,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/breathing_rate_avg_high"
             android:layout_toLeftOf="@id/breathing_rate_avg_high_test"
-
+            android:textColor="@android:color/white"
             android:text="@string/breathing_rate_avg_bpm"/>
 
         <TextView
@@ -81,6 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/breathing_rate_avg_bpm"
             android:layout_toLeftOf="@id/breathing_rate_avg_high_test"
+            android:textColor="@android:color/white"
             android:text="@string/breathing_rate_avg_low" />
 
 
