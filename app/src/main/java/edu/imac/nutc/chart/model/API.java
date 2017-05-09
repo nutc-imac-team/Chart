@@ -24,12 +24,49 @@ import java.util.Map;
 public class API {
     private RequestQueue queue;
     private Context context;
+    private GetLoginFinish getLoginFinish;
     private GetHRVFinish getHRVFinish;
     private GetHRFinish getHRFinish;
     private GetBRFinish getBRFinish;
+    private Toast toast;
     public API(Context context){
         this.context=context;
         queue = SingleRequestQueue.getQueue(context);
+    }
+    public void setOnLoginFinish(GetLoginFinish getLoginFinish) {
+        this.getLoginFinish = getLoginFinish;
+    }
+    public interface GetLoginFinish{
+        void finish(String response) throws JSONException;
+    }
+    public void getLogin(final String network) {
+        String url = "http://smartbed.honixtech.com:8081/api/login";
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        if (getLoginFinish != null) {
+                            try {
+                                getLoginFinish.finish(response);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("请求错误:", error.toString());
+                showToast("網路異常，請重新確認");
+            }
+        }) {
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("network", network);
+                return params;
+            }
+        };
+        queue.add(stringRequest);
     }
     public void setOnBRFinish(GetBRFinish getBRFinish) {
         this.getBRFinish = getBRFinish;
@@ -56,6 +93,7 @@ public class API {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e("请求错误:", error.toString());
+                showToast("網路異常，請重新確認");
             }
         }) {
             protected Map<String, String> getParams() {
@@ -92,6 +130,7 @@ public class API {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e("请求错误:", error.toString());
+                showToast("網路異常，請重新確認");
             }
         }) {
             protected Map<String, String> getParams() {
@@ -128,6 +167,7 @@ public class API {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e("请求错误:", error.toString());
+                showToast("網路異常，請重新確認");
             }
         }) {
             protected Map<String, String> getParams() {
@@ -158,5 +198,15 @@ public class API {
             }
             return queue;
         }
+    }
+    private void showToast(String str) {
+        if (toast == null) {
+            //如果還沒有用過makeText方法，才使用
+            toast = android.widget.Toast.makeText(context, str, Toast.LENGTH_SHORT);
+        } else {
+            toast.setText(str);
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }
+        toast.show();
     }
 }
